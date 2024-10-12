@@ -29,6 +29,7 @@
                 }],
                 ['OS=="win"', {
                   'libraries': ['-lWinSCard'],
+                  "defines": ["NOMINMAX"],
                   "include_dirs" : [ "<!(node -e \"require('nan')\")" ]
                 }]
             ]
